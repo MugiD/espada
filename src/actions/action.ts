@@ -35,7 +35,14 @@ export async function getAnswer(question: string) {
   const { text, finishReason, usage } = await generateText({
     model: openai('gpt-3.5-turbo'),
     prompt: question,
+    maxTokens: 100,
+    temperature: 0.5,
+    topP: 1,
+    frequencyPenalty: 0,
+    presencePenalty: 0,
+    system: "You are idea reviewer. You are reviewing an idea for a new hackathon project. Review it based on usability, creativity, and feasibility.",
   });
+  
 
   return { text, finishReason, usage };
 }
