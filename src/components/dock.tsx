@@ -4,8 +4,8 @@ import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconUserScan,
-  IconBrandX,
-  IconExchange,
+  IconBrandGithub,
+  IconRobot,
   IconHome,
   IconBinoculars,
   IconUsers,
@@ -45,22 +45,22 @@ export function FloatingDockDemo() {
       href: "/create-team",
     },
     {
-      title: "Changelog",
+      title: "AI",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconRobot className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/ai",
     },
 
     {
-      title: "Twitter",
+      title: "Github",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/MugiD/espada",
     },
     {
-      title: "Profile",
+      title: "Dashboard",
       icon: (
         <IconUserScan className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
